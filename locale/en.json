@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "AI session rename",
+    "description": "Renames a session from its own conversation through the sidebar context menu.",
+    "detail": "docs/DETAIL.md"
+  }
+}

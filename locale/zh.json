@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "根据对话重命名会话",
+    "description": "在侧边栏会话右键菜单中，根据该会话的对话内容重新生成标题。",
+    "detail": "docs/DETAIL.md"
+  }
+}

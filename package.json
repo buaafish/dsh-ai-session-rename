@@ -1,0 +1,46 @@
+{
+  "name": "dsh-ai-session-rename",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Rename a session from its own conversation content.",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "session-title"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buaafish/dsh-ai-session-rename.git"
+  },
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-context-menu"
+      ]
+    }
+  }
+}

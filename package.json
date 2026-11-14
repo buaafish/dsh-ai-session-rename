@@ -1,7 +1,6 @@
 {
   "name": "dsh-ai-session-rename",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "description": "Rename a session from its own conversation content.",
   "license": "MIT",
@@ -14,6 +13,10 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/buaafish/dsh-ai-session-rename.git"
+  },
+  "homepage": "https://github.com/buaafish/dsh-ai-session-rename#readme",
+  "bugs": {
+    "url": "https://github.com/buaafish/dsh-ai-session-rename/issues"
   },
   "main": "./index.js",
   "exports": {
@@ -28,7 +31,8 @@
     "cordis.patch.yml",
     "locale/*.json",
     "docs",
-    "icon.svg"
+    "icon.svg",
+    "assets"
   ],
   "dsh": {
     "bundle": {

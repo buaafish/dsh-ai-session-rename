@@ -26,7 +26,7 @@ plugin_manager → install_bundle → https://github.com/buaafish/dsh-ai-session
 plugin_manager → install_bundle → <本仓库绝对路径>
 ```
 
-装完**刷新页面**菜单项就出现；Host 半（`index.js`）要重启一次应用才加载。
+装完**刷新页面**菜单项就出现；`index.js` 那部分要重启一次应用才加载。
 
 卸载走 `plugin_manager → remove_bundle`，别手动删目录。
 
@@ -78,8 +78,8 @@ DSH 里显式改标题的事件源是 `user`，而 `user` 源会让自动标题�
 ## 结构
 
 ```
-index.js          Host 半：POST /api/ai-session-rename 生成标题 + session_rename_ai 工具
-client.js         Client 半：右键菜单项、自有图标、生成中/失败提示
+index.js          Host 端：POST /api/ai-session-rename 生成标题 + session_rename_ai 工具
+client.js         Client 端：右键菜单项、自有图标、生成中/失败提示
 cordis.patch.yml  把插件插进 Loader
 locale/*.json     插件列表里的名称与描述（en / zh）
 docs/DETAIL.md    插件详情页文档

@@ -6,13 +6,29 @@
 
 ## 装
 
-DSH 插件管理里选「从本地目录安装」，指向本目录即可：
+三种方式，任选其一。
+
+**从 npm（推荐）**——已发布到 [npm](https://www.npmjs.com/package/dsh-ai-session-rename)：
+
+```
+plugin_manager → install_bundle → dsh-ai-session-rename
+```
+
+**从 GitHub 预构建包**——不用克隆、不用装依赖：
+
+```
+plugin_manager → install_bundle → https://github.com/buaafish/dsh-ai-session-rename/releases/latest/download/dsh-ai-session-rename.tgz
+```
+
+**从本地目录**——改代码调试时用：
 
 ```
 plugin_manager → install_bundle → <本仓库绝对路径>
 ```
 
-或者命令行让 DSH 自己装。装完**刷新页面**菜单项就出现；Host 半（`index.js`）要重启一次应用才加载。
+装完**刷新页面**菜单项就出现；Host 半（`index.js`）要重启一次应用才加载。
+
+卸载走 `plugin_manager → remove_bundle`，别手动删目录。
 
 ## 用
 

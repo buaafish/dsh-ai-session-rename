@@ -1,6 +1,6 @@
 {
   "name": "dsh-ai-session-rename",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "Rename a session from its own conversation content.",
   "license": "MIT",

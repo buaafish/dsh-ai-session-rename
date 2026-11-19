@@ -6,29 +6,19 @@
 
 ## 装
 
-三种方式，任选其一。
+已发布到 [npm](https://www.npmjs.com/package/dsh-ai-session-rename)。两种装法，任选一种：
 
-**从 npm（推荐）**——已发布到 [npm](https://www.npmjs.com/package/dsh-ai-session-rename)：
+- **图形化（桌面应用内）**：打开「插件管理」页，在安装框里填 `dsh-ai-session-rename`，不用开终端。
+- **命令行**：`dsh plugin --profile <profile> add dsh-ai-session-rename`，`<profile>` 按你在用的界面填——`dsh web` 填 `web`，桌面应用（Electron 版）填 `desktop`。
 
-```
-plugin_manager → install_bundle → dsh-ai-session-rename
-```
+不从 npm 装、或本地改代码调试时，安装框里改填下面其中一条（命令行把包名换成同一条）：
 
-**从 GitHub 预构建包**——不用克隆、不用装依赖：
-
-```
-plugin_manager → install_bundle → https://github.com/buaafish/dsh-ai-session-rename/releases/latest/download/dsh-ai-session-rename.tgz
-```
-
-**从本地目录**——改代码调试时用：
-
-```
-plugin_manager → install_bundle → <本仓库绝对路径>
-```
+- **GitHub 预构建包**——不用克隆、不用装依赖：`https://github.com/buaafish/dsh-ai-session-rename/releases/latest/download/dsh-ai-session-rename.tgz`
+- **本地目录**：`<本仓库绝对路径>`
 
 装完**刷新页面**菜单项就出现；`index.js` 那部分要重启一次应用才加载。
 
-卸载走 `plugin_manager → remove_bundle`，别手动删目录。
+卸载走「插件管理」，别手动删目录。命令行：`dsh plugin --profile <profile> remove dsh-ai-session-rename`。
 
 ## 用
 
